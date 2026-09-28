@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import HelloWorld from './components/HelloWorld.vue'
+import Circavia from './components/Circavia.vue'
 import { setLocale } from './i18n'
 
 const { locale, t } = useI18n()
@@ -18,7 +18,8 @@ const { locale, t } = useI18n()
       {{ t(`lang.${code}`) }}
     </button>
   </div>
-  <HelloWorld />
+  <Circavia />
+  <footer class="py-6 text-sm">© Frédéric Champreux - 2026</footer>
 </template>
 
 <style scoped>
